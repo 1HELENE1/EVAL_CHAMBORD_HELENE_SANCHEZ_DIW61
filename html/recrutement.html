@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- cdn bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <!-- mon css -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <meta name="author" content="helene sanchez" />
+    <meta
+      name="description"
+      content="Hotel 5 étoiles à Paris, le luxe à la française"
+    />
+    <title>Recrutement</title>
+  </head>
+  <body>
+    <!-- recuperer le formulaire TP sur la pateforme pour le charger dans l'exercice -->
+
+    <form id="recrutement">
+      <span class="form_col">Genre :</span>
+      <label>
+        <input name="genre" type="radio" value="H" />
+        Homme
+      </label>
+      <label>
+        <input name="genre" type="radio" value="F" />
+        Femme
+      </label>
+      <label>
+        <input name="genre" type="radio" value="F" />
+        Ne souhaite pas répondre
+      </label>
+      <span class="tooltip">Vous devez sélectionner votre genre</span>
+      <br />
+      <br />
+      <label class="form_col" for="lastName">Nom :</label>
+      <input name="lastName" id="lastName" type="text" />
+      <span class="tooltip">
+        Un nom ne peut pas faire moins de 2 caractères
+      </span>
+      <br />
+      <br />
+      <label class="form_col" for="firstName">Prénom :</label>
+      <input name="firstName" id="firstName" type="text" />
+      <span class="tooltip">
+        Un prénom ne peut pas faire moins de 2 caractères
+      </span>
+      <br />
+      <br />
+      <label class="form_col" for="age">Âge :</label>
+      <input name="age" id="age" type="text" />
+      <span class="tooltip">L'âge doit être compris entre 5 et 140</span>
+      <br />
+      <br />
+      <label class="form_col" for="email">Email :</label>
+      <input type="email" placeholder="mail@mail.com" />
+      <span class="tooltip">inscrire votre email</span>
+      <br />
+      <br />
+      <label class="form_col" for="metier">Je postule :</label>
+      <select name="metier" id="metier">
+        <option value="none">Sélectionnez votre métier</option>
+        <option value="S">Serveur/serveuse</option>
+        <option value="C">Cuisinier/cuisinière</option>
+        <option value="R">Réceptionniste</option>
+        <option value="B">Bagagiste</option>
+        <option value="A">Agent d'entretien</option>
+      </select>
+      <span class="tooltip">
+        Vous devez sélectionner le métier pour lequel vous postulez
+      </span>
+      <br />
+      <br />
+      <label class="form_col" for="file">CV :</label>
+      <input type="file" id="file" name="file" />
+      <br />
+      <label class="form_col" for="file">Lettre de motivation :</label>
+      <input type="file" id="file" name="file" />
+      <br />
+      <br />
+      <label class="form_col" for="text">Message facultatif :</label>
+      <input name="textarea" type="text" rows="5" cols="33" />
+      <br />
+      <br />
+      <span class="form_col"></span>
+      <label>
+        <input name="news" type="checkbox" />
+        J'accepte que l'hôtel Chambord utilise mes données pour me contacter
+      </label>
+      <br />
+      <br />
+
+      <span class="form_col"></span>
+      <input type="submit" value="Postuler" />
+      <input type="reset" value="Réinitialiser le formulaire" />
+    </form>
+
+    <!-- SCRIPT -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="/js/recrutement.js"></script>
+  </body>
+</html>
