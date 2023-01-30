@@ -7,10 +7,14 @@ test
 <!-- POUR FAIRE UN LIEN
       <a href="#acces">Sport</a> -->
 
+<!-- SUPPRIMER LES FONT -->
+<!-- FOOTER -->
+<!-- VIDEO -->
+
 <!-- DERNIER JOUR METTRE LES NAV ET FOOTER A JOUR -->
+<!-- AJOUTER LIENS VERS PRODUITS -->
+<!-- AJOUTER SUR TOUTES LES PAGES LIENS VERS INDEX ou bien LIEN SUR LE LOGO-->
 <!-- METTER LES ETOILES SUR LA PAGE D'ACCUEIL -->
-<!-- VERIFIER LES PHOTOS -->
-<!-- AJOUTER DS HISTOIRE HOTEL LIEN VERS AGENDA -->
 <!-- INSERER PARALAX -->
 <!-- <polygon id="etoile"></polygon>
 #etoile {
@@ -18,3 +22,4 @@ test
   height: 50px;
   border: #CF9A3B;
 } -->
+<!-- rer AJOUTER LES ALT -->
