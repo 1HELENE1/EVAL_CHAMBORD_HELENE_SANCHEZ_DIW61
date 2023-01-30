@@ -4,9 +4,13 @@
   padding: 0;
   box-sizing: border-box;
   background-color: #eedec0 ;
-  font-family: 'Nunito', sans-serif;
+  font-family: Georgia;
 }
-
+.warning {
+  background-color: #eedec0 ;
+  color: red;
+  text-align: center;
+}
 /* NAV */
 .bg-creme {
      background-color: #CF9A3B;
@@ -22,12 +26,11 @@
 } 
 
 /* carousel */
-
 .imgcar1 {
-  height:50vh;
+  height:60vh;
   width: 90vw;
   object-fit: cover;
-}
+  }
 .carouselcontainer {
   display: flex;
   justify-content: center;
@@ -47,11 +50,14 @@
 .bottom-left h3 {
   background-color: transparent;
 }
-/* bouton découvrez */
 
-
+/* CHAMBRES */
+.bg-perso {
+  background-color: #545454;
+  color :#CF9A3B;
+  font-size: 20px;
+}
 /* /footer */
-
 .flex {
   display: flex;
 }
@@ -71,7 +77,6 @@ footer {
 .center {
   justify-content: center;
 }
-
 .wrap {
   flex-wrap: wrap;
 }
@@ -109,20 +114,11 @@ h6 {
   text-align: center;
 }
 
-/* Accueil */
-
-/* carousel */
-
-.bienvenue {
-  text-align: center;
-}
 /* formulaire */
-
 
 /* #recrutement{
 background-color: background-image radial-gradient( circle farthest-corner at 10% 20%,  rgba(245,242,117,1) 0%, #bbb 90% );
 } */
-
    .form_col {
      display: inline-block;
      margin-right: 15px;
