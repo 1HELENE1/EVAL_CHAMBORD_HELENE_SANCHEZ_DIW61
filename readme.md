@@ -1,6 +1,12 @@
-test
+<!-- <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script> -->
+
+<!-- https://codepen.io/hesguru/pen/BaybqXv -->
+
+<!-- backgroud site  #eedec0 -->
 <!-- couleur or #CF9A3B -->
 <!-- couleur grise #545454 -->
+  <!-- color bordeaux: rgb(145, 59, 59); -->
+
 <!-- INSERTION IMAGE 
     <img src="xxx.jpg" alt="description image"> -->
 
@@ -10,10 +16,9 @@ test
 
 <!-- rer AJOUTER LES ALT 
 changer les titres des cards accueil-->
+<!-- indentation SPA CHAMBRE-->
 
-
-<!-- FOOTER ajouter newsletter et contact-->
-<!-- VIDEO -->
+>
 
 <!-- DERNIER JOUR METTRE LES NAV ET FOOTER A JOUR -->
 <!-- AJOUTER LIENS VERS PRODUITS -->

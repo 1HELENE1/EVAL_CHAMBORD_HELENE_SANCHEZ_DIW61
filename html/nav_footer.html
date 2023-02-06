@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,300;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- cdn bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <!-- mon css -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <meta name="author" content="helene sanchez" />
+    <meta
+      name="description"
+      content="Le luxe à la française, venez découvrir l'Hôtel Chambord 5 étoiles, son restaurant et son spa, en plein coeur de Paris"
+    />
+    <title>Hotel Le Chambord</title>
+  </head>
+  <body>
+    <div class="warning">
+      <span>
+        Ce site est un exercice d'évaluation pour le titre RNCP de développeuse
+        web - Ifocop Paris 11.
+      </span>
+    </div>
+    <!-- NAV -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <img
+          class="navbar-brand"
+          src="img/logo_chambord.JPG"
+          width="15%"
+          alt="logo_hotel_chambord"
+        />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- boutonn langue -->
+        <img
+          id="fr"
+          src="img/flag-france.png"
+          width="5%"
+          alt="drapeau_france"
+        />
+        <!--PLACER UNE alerte sur le GB  -->
+        <img
+          id="gb"
+          src="img/flag-united-kingdom.png"
+          width="5%"
+          alt="drapeau_grande_bretagne"
+        />
+        <!-- menu nav -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="html/chambre.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                CHAMBRES
+              </a>
+              <ul class="dropdown-menu colorbutton">
+                <li>
+                  <a class="dropdown-item" href="html/chambre.html">
+                    Classique
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item " href="html/chambre.html">Confort</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="html/chambre.html">Deluxe</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="html/chambre.html">Suite</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="html/restaurant.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                RESTAURANT
+              </a>
+              <ul class="dropdown-menu colorbutton">
+                <li>
+                  <a class="dropdown-item" href="#cbrasserie">
+                    Carte Brasserie
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#cdegustation">
+                    Carte Dégustation
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#crestaurant">
+                    Carte Restaurant
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="html/spa.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                SPA
+              </a>
+              <ul class="dropdown-menu colorbutton">
+                <li>
+                  <a class="dropdown-item" href="html/spa.html">Soin Détente</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="html/spa.html">
+                    Soin Découverte
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="html/spa.html">
+                    Soin Relaxant
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="html/spa.html">Soin Plaisir</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="html/spa.html">Soin Evasion</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#hotel"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                L'HOTEL
+              </a>
+              <ul class="dropdown-menu colorbutton">
+                <li>
+                  <a class="dropdown-item" href="html/apropos.html">
+                    Qui sommes-nous
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="html/acces.html">Accès</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="html.contact.html">Contact</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="html/recrutement.html">
+                    Recrutement
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="html/agenda.html">Agenda</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-1"
+              type="search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success colorbutton" type="submit">
+              Search
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary btn-lg buttonresa"
+              href="#reservations"
+            >
+              Reservations
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- FIN NAV********************************* -->
+
+
+    <!-- FOOTER************************** -->
+<!-- AGENDA EGALISER LES TAILLES VERIFIER LA VIDEO-->
+
+<div class="agenda">
+  <div class="row row-cols-1 row-cols-md-2 m-lg-4">
+    <div class="col mb-4 mt-2">
+<!-- ACTUALITES vidéo la video ne fonctionne pas -->
+      <div class="card">
+          <!-- <iframe
+          width="500"
+          height="280"
+          src="https://www.youtube.com/embed/PiEWt62EOdc"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        ></iframe> -->
+        <video controls src="https://www.youtube.com/embed/PiEWt62EOdc"
+          type="video/webm" frameborder="0" autoplay=1 clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share>
+        </video>
+<!-- EVENEMENTS la video ne fonctionne pas-->
+        <div class="card-body" id="actueve">
+          <h5 class="card-title">EVENEMENTS</h5>
+          <p class="card-text">
+Que ce soit pour un événement professionnel comme un séminaire,
+une soirée d’entreprise, un moment important avec vos clients,
+un repas d’affaires ou encore un showroom, vos partenaires
+seront accueillis avec professionnalisme et sérieux.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col mb-4 mt-2">
+      <div class="card">
+        <img src="/img/anim_croisiere.jpg" class="card-img-top" alt="photo_animation_croisiere" />
+        <div class="card-body">
+          <!-- METTRE EN FADIN -->
+          <!-- <img src="/img/actua_pot.jpg" class="card-img-top" alt="..."> -->
+          <h5 class="card-title">ACTUALITES</h5>
+          <p class="card-text">
+            Toute l'année, l'hôtel Chambord***** propose des croisières de
+            luxe en yatch en collaboration avec Perrier-Jouet.
+            <br />
+            Possibilité de privatiser.
+          </p>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-- ACCES  GOOGLE CONTACT NEWSLETTER -->
+<div class="acces flex">
+  <div class="m-lg-4">
+<!-- <div class="maps"> -->
+  <iframe id="acces"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20995.413052507876!2d2.267698915625!3d48.86914299999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fc283398695%3A0xbcab693120238656!2sPrince%20de%20Galles%2C%20a%20Luxury%20Collection%20Hotel%2C%20Paris!5e0!3m2!1sfr!2sfr!4v1675092206167!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="video evenement" alt="video evenement"></iframe>
+</div>
+<!-- suivez nous -->
+<div class="newsletter mt-2">
+  <h3>Suivez nous en temps réel !</h3>
+  <!-- METTRE EN JS LE CHAMPS EMAIL SEULEMENT -->
+  <label form="email"></label>
+  <input type="email" class="p-2" name="email" placeholder="entrer your email                                     ">
+  <input type="submit" class="colorbutton p-2" value="S'inscrire à notre newsletter">
+  <!-- ICON -->
+  <div>
+    <ul class="flex p-1">
+      <li class="icon icon-fb"></li>
+      <li class="icon icon-linkedin"></li>
+      <li class="icon icon-youtube"></li>
+    </ul>
+    <h3>Nous contacter :</h3>
+    <form class="contact">
+    <label for="lastName">Votre nom :</label>
+    <input name="lastName" id="lastName" type="text" />
+    <br />
+    <br />
+    <label for="firstName">Votre prénom :</label>
+    <input name="firstName" id="firstName" type="text" />
+   <br />
+    <br />
+    <label for="text">Votre message :</label>
+    <textarea class="message"></textarea>
+    <br />
+    <label class="mt-3">
+      <input class="colorbutton" type="submit" value="Envoyer" />
+      <input type="checkbox" />
+      <sapn class="accept">J'accepte que l'hôtel Chambord utilise mes données pour me contacter
+      </span>
+    <br />
+    <br />
+  </form>
+</div>
+</div>
+</div>
+
+<!-- FOOTER -->
+<footer class="flex justify-content-around wrap">
+<div>
+  <ul>
+  <li class="bold">L'hôtel</li>
+  <li><a href="html/chambre.html">Chambres</a></li>
+  <li><a href="html/restaurant.html">Restaurant</a></li>
+  <li><a href="html/spa.html">SPA</a></li>
+  <li><a href="/index.html#apropos">Qui sommes-nous</a></li>
+  <li><a href="/index.html#acces">Accès</a></li>
+  <li><a href="html/recrutement.html">Recrutement</a></li>
+  </ul>
+</div>
+<div>
+<ul>
+  <li class="bold">Agenda</li>
+  <li class=""><a href="html/index.html#actueve">Evenements</a></li>
+  <li class=""><a href="#">Presse</a></li>
+  <li class=""><a href="html/index.html#actueve">Actualités</a></li>
+</ul>
+</div>
+<div>
+<ul>
+  <li class=""><a href="#">Données personnees</a></li>
+  <li class=""><a href="#">CGV</a></li>
+  <li class=""><a href="#">Mentions légales</a></li>
+</ul>
+<div>
+  <ul class="flex p-2">
+    <li class="icon icon-phone"></li>
+    <li class="icon icon-email"></li>
+    <li class="icon icon-faq"></li>
+  </ul>
+</div>
+</div>
+<div>
+<h5 class="textfoot">Hôtel Le Chambord*****</h5>
+<h6 class="textfoot">18 rue de labas<br> 75016 Paris <br> 33 (0)1 45 63 87 23<br><br>contact.lechambord@hotel.com</h6>
+</div>
+
+
+</div>
+<h6 class="hs">© Hélène Sanchez</h6>
+</footer>
+
+<!-- SCRIPT -->
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+crossorigin="anonymous"
+></script>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

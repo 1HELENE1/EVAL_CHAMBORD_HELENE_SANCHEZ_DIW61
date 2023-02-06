@@ -1,28 +1,33 @@
-// window.onload = function (){
+// $(document).ready(() => {}) fonction fleché anonyme
+$(document).ready(function () {
+  // alert qui apparaisse sur sur le bouton GB et disparaisse seule, ne fonctionne pas
+  // $('#gb').on('click', function(){
+  //   alert('gb non dispo');
+  //   $(this).css('background', 'lightgreen');
+  // });
 
+  // ne fonctionne que sur un "anim", comment le dupliquer
+  /**
+   * Je met le mot clés liste devant un tableau => array []
+   */
+  // jquery methode
+  // $('.anim').hover(function() {
+  //   this.style.transform = "scale(1.2)";
+  // },function() {
+  //   this.style.transform = "scale(1)";
+  // })
 
-// // /bouton GB
-// //  document.getElementById('gb') function {
-// //     alert('cette page est en cours de réalistation')
-// //  }
-    
+  const listeAnim = document.querySelectorAll('.anim')
+  listeAnim.forEach(function (anim) {
+    anim.addEventListener('mouseover', function () {
+      anim.style.transform = 'scale(1.2)'
+    })
+    anim.addEventListener('mouseout', function () {
+      anim.style.transform = 'scale(1)'
+    })
+  })
+})
 
-// {/* HTML <h3>Apparition / Disparition</h3>
-// <button id="gb"></button>
-// <p id="infogb">Ce texte apparait ou disparait en cliquant sur le bouton</p> */}
-
-//  // apparition dispariton
-//     // en cliquant faire disparaitre le paragraphe
-//     console.log(infogb.style.display);
-
-//     showHide.onclick = function(){
-//         // si le texte est visible
-//     if(info2.style.display == "")
-//     // je le rend invisible
-//         {info2.style.display = "none"}
-//         //sinon (si est invsible)  alors je le rend visible
-//     else {info2.style.display = ""};
-//     }
-
-//     // fin de la derniere parenthese
-// }
+// <!-- apparition en fondu -->
+// <button id="fadeIn">Apparition en fade</button>
+// <div id="vert" style="width: 100px; height:100px; background:green; margin: 20px; display: none;"></div>
