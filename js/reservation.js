@@ -1,17 +1,20 @@
 
 
-        var form = document.getElementById("reservation-form");
-      
-        // Ajouter un gestionnaire d'événements pour soumettre le formulaire
-        form.addEventListener("submit", function(event) {
-          event.preventDefault(); // Empêcher la soumission du formulaire par défaut
-      
-          // Vérifier la validité des champs du formulaire
+        var form = document.getElementById("reservation");
+          form.addEventListener("submit", function(event) {
+          event.preventDefault(); 
           if (form.checkValidity()) {
-            // Les données du formulaire sont valides, envoyer les données à un script côté serveur pour traitement
-            // Code pour envoyer les données à un script côté serveur
+          
           } else {
-            // Les données du formulaire sont invalides, afficher un message d'erreur
             document.getElementById("error-message").innerHTML = "Veuillez remplir tous les champs et vérifier que les données saisies sont valides.";
           }
         });
+
+        // function calculateTotal() {
+        //   const restaurant = parseFloat(document.getElementById("restaurant").value);
+        //   const spa = parseFloat(document.getElementById("spa").value);
+        //   const chambre = parseFloat(document.getElementById("chambres").value);
+        //   const total = item1 + item2 + item3;
+        //   document.getElementById("total").value = total;
+        // }
+        

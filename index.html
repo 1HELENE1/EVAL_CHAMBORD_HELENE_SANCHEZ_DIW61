@@ -35,15 +35,14 @@
       </span>
     </div>
     <!-- NAV -->
-
-    <!-- FIXER LA NAV -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg fixed-top" id="nav">
       <div class="container-fluid">
         <img
           class="navbar-brand"
           src="img/logo_chambord.JPG"
           width="15%"
           alt="logo_hotel_chambord"
+          id="logoaccueil"
         />
         <button
           class="navbar-toggler"
@@ -86,18 +85,18 @@
               
               <ul class="dropdown-menu colorbutton">
                 <li>
-                  <a class="dropdown-item" href="html/chambre.html">
+                  <a class="dropdown-item" href="html/chambre.html#ccl">
                     Classique
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item " href="html/chambre.html">Confort</a>
+                  <a class="dropdown-item " href="html/chambre.html#cco">Confort</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="html/chambre.html">Deluxe</a>
+                  <a class="dropdown-item" href="html/chambre.html#cde">Deluxe</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="html/chambre.html">Suite</a>
+                  <a class="dropdown-item" href="html/chambre.html#cs">Suite</a>
                 </li>
               </ul>
             </li>
@@ -195,12 +194,13 @@
             </li>
           </ul>
           <form class="d-flex" role="search">
-            <input
+            <input id="searchbar"
               class="form-control me-1"
-              type="search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success colorbutton" type="submit">
+              type="search" id="search"
+              aria-label="Search" />
+               <!-- onchange="searchPage()"/> -->
+            <button class="btn btn-outline-success colorbutton" id="submitBtn"type="submit">
+              <!-- onclick="searchPage()"> -->
               Search
             </button>
             <button
@@ -288,7 +288,7 @@
       </div>
     </div>
     <!-- ACCUEIL -->
-    <div class="card mb-6 bs-card-bg">
+    <div class="card mb-6 bs-card-bg border-0">
       <div class="row no-gutters">
         <div class="col-md-6">
           <div class="card-body">
@@ -300,7 +300,7 @@
           </div>
         </div>
 
-        <div class="col-md-6 bs-card-bg">
+        <div class="col-md-6 bs-card-bg border-0">
           <div class="card-body">
             <p class="card-text">
               En plein coeur de Paris, face à la Seine et à seulement      quelques pas de la Tour Eiffel, l’Hôtel Chambord***** son restaurant et son SPA NUXE.<br />
@@ -315,11 +315,11 @@ de loisirs ou d’affaires.
     </div>
 
     <!-- CHAMBRES AJOUTER LES ETOILES APRES LES H5-->
-    <div class="card mb-6 bs-card-bg">
+    <div class="card mb-6 bs-card-bg border-0">
       <div class="row no-gutters">
         <div class="col-md-6">
           <div class="card-body">
-            <h5 class="card-title">Vous serez ici chez vous.</h5>
+            <h4 class="card-title">Vous serez ici chez vous.</h4>
             <p class="card-text">
 Dans un cadre propice à la rêverie, l’Hôtel Chambord***** vous
 convie pour un séjour placé sous le signe du calme et de la
@@ -341,7 +341,7 @@ harmonie tradition et modernité, ancien et contemporain.
       </div>
     </div>
     <!-- RESTAURANT -->
-    <div class="card mb-6 bs-card-bg">
+    <div class="card mb-6 bs-card-bg border-0">
       <div class="row no-gutters">
         <div class="col-md-6">
           <img class="anim" src="/img/accueil_restaurant.jpg"
@@ -350,9 +350,9 @@ harmonie tradition et modernité, ancien et contemporain.
         </div>
         <div class="col-md-6">
           <div class="card-body">
-            <h5 class="card-title">
-              Une adresse gastronomique exclusive, au cœur de Paris.
-            </h5>
+            <h4 class="card-title">
+              Une adresse gastronomique exclusive.
+            </h4>
             <p class="card-text">
               Pour un délicieux moment de gastronomie, il vous suffira de
               pousser la porte de notre restaurant "Le Chambord". Hébergé dans
@@ -370,13 +370,13 @@ harmonie tradition et modernité, ancien et contemporain.
       </div>
     </div>
     <!-- SPA NUXE -->
-    <div class="card mb-6 bs-card-bg">
+    <div class="card mb-6 bs-card-bg border-0">
       <div class="row no-gutters">
         <div class="col-md-6">
           <div class="card-body">
-            <h5 class="card-title">
-              Notre Spa Nuxe, une expérience de relaxation inoubliable.
-            </h5>
+            <h4 class="card-title">
+              Notre Spa, une expérience de relaxation inoubliable.
+            </h4>
             <p class="card-text bs-card-bg">
               <br />
               Plongé dans le calme absolu de l'une de nos 3 cabines, offrez-vous
@@ -396,19 +396,17 @@ harmonie tradition et modernité, ancien et contemporain.
       </div>
       </div>
  
-    <!-- RESERVATION -->
-
-    <!-- HOTEL / QUI SOMMES NOUS / A PROPOS-->
-    <div class="card mb-6 bs-card-bg" id="apropos">
+<!-- HOTEL / QUI SOMMES NOUS / A PROPOS-->
+    <div class="card mb-6 bs-card-bg border-0" id="apropos">
       <div class="row no-gutters">
         <div class="col-md-6">
           <img class="anim" src="img/accueil_salon.jpg" width="80%" alt="photo_salon" />
         </div>
         <div class="col-md-6">
           <div class="card-body">
-            <h5 class="card-title mt-3">
+            <h4 class="card-title mt-3">
               L'hôtel Chambord*****, un lieu chargé d’Histoire.
-            </h5>
+            </h4>
             <p class="card-text">
 De grands personnages ont défilé depuis la Révolution à la
 Libération, à la signature du traité des Nations. L’ancienne
@@ -424,18 +422,17 @@ pieds.
       </div>
     </div>
     </div>
-    <!-- RECRUTEMENT -->
 <!-- FOOTER  -->
 <!-- AGENDA-->
 <div class="agenda" id="agenda">
   <div class="row row-cols-1 row-cols-md-2 m-lg-4">
     <div class="col mb-4 mt-2">
-<!-- ACTUALITES -->
+<!-- EVENEMENTS -->
       <div class="card">
-        <video controls src="https://www.youtube.com/embed/PiEWt62EOdc"
-          type="video/webm" frameborder="0" autoplay=1 clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share>
-        </video>
-<!-- EVENEMENTS-->
+        <video height="280"controls>
+          <source src="/img/video2.mp4" type="video/mp4" class="">
+video d'une fête à l'hotel Chambord</video>
+   
         <div class="card-body">
           <h5 class="card-title">EVENEMENTS</h5>
           <p class="card-text">
@@ -447,8 +444,9 @@ seront accueillis avec professionnalisme et sérieux.
         </div>
       </div>
     </div>
-    <div class="col mb-4 mt-2">
-      <div class="card">
+    <!-- ACTUALITES -->
+    <div class="col mb-4 mt-2"> 
+      <div class="card ">
         <img src="img/anim_croisiere.jpg" class="card-img-top" alt="photo_animation_croisiere" />
         <div class="card-body">
           <h5 class="card-title">ACTUALITES</h5>
@@ -517,7 +515,7 @@ seront accueillis avec professionnalisme et sérieux.
   <li class=""><a href="html/restaurant.html">Restaurant</a></li>
   <li class=""><a href="html/spa.html">SPA</a></li>
   <li class=""><a href="#apropos">Qui sommes-nous</a></li>
-  <li class=""><a href="html/acces.html">Accès</a></li>
+  <li class=""><a href="#acces">Accès</a></li>
   <li class=""><a href="html/recrutement.html">Recrutement</a></li>
   </ul>
 </div>
@@ -531,9 +529,9 @@ seront accueillis avec professionnalisme et sérieux.
 </div>
 <div>
 <ul>
-  <li class=""><a href="#">Données personnees</a></li>
-  <li class=""><a href="#">CGV</a></li>
-  <li class=""><a href="#">Mentions légales</a></li>
+  <li class=""><a href="html/juridique.html">Données personnees</a></li>
+  <li class=""><a href="html/juridique.html">CGV</a></li>
+  <li class=""><a href="html/juridique.html">Mentions légales</a></li>
 </ul>
 <div>
   <ul class="flex p-2">
@@ -547,8 +545,6 @@ seront accueillis avec professionnalisme et sérieux.
 <h5 class="textfoot">Hôtel Le Chambord*****</h5>
 <h6 class="textfoot">18 rue de labas<br> 75016 Paris <br> 33 (0)1 45 63 87 23<br><br>contact.lechambord@hotel.com</h6>
 </div>
-
-
 </div>
 <h6 class="hs">© Hélène Sanchez</h6>
 </footer>
@@ -561,5 +557,7 @@ crossorigin="anonymous"
 ></script>
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script src="js/app.js"></script>
+<script src="js/test.js"></script>
+
 </body>
 </html>

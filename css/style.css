@@ -16,6 +16,10 @@ body {
   text-align: center;
 }
 /* NAV */
+#nav {
+background-color: wheat; 
+}
+
 .bg-creme {
   /* color: #cf9a3b; */
   background: #eedec0;
@@ -48,7 +52,7 @@ body {
 .carouselcontainer {
   display: flex;
   justify-content: center;
-  background-color: none !important;
+  background-color: wheat;
 }
 .carousel-indicators {
   margin-left: 40%;
@@ -125,15 +129,13 @@ color:#545454
 }
 
 
-
-
-
 /* AGENDA**********************/
 
 .agenda {
   background-image: url('/img/fond3.jpg') !important;
   background-size: cover;
 }
+
 /* NEWSLETTER ET MAPS*/
 .acces {
   flex-wrap: wrap;
@@ -241,7 +243,7 @@ ul {
     height: 40px;
   }
  
-/* recrutement */
+/* recrutement et reservation */
 
 .recrutement {
   margin:auto

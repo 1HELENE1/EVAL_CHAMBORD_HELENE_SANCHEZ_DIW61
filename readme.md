@@ -15,10 +15,22 @@
 
 
 <!-- rer AJOUTER LES ALT 
-changer les titres des cards accueil-->
-<!-- indentation SPA CHAMBRE-->
+ajouter target blank
+<!-- faire liens header sur index et sur nav footer
+liens footer
+liens reservation
+ajouter tous les scripts sur navfooter et index
+ajouter script JS sur recrutement et reservation -->
+<!-- indentation -->
+<!-- verifier la video -->
+ <!-- <script
+      src="https://kit.fontawesome.com/896637ab26.js"
+      crossorigin="anonymous"
+    ></script> -->
 
->
+<!-- QUESTIONS JC
+.HINTRC
+MISE EN LIGNE -->
 
 <!-- DERNIER JOUR METTRE LES NAV ET FOOTER A JOUR -->
 <!-- AJOUTER LIENS VERS PRODUITS -->
